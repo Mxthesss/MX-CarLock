@@ -46,15 +46,13 @@ Once MX-CarLock is installed and configured, you can use the following key bindi
 
 ## Contributing
 
-Contributions to MX-CarLock are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request in the [GitHub repository](https://github.com/Mxthesss/MX-CarLock).
+- Contributions to MX-CarLock are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request in the [GitHub repository](https://github.com/Mxthesss/MX-CarLock).
+
+- Or join my discord server ;) [Discord](https://dsc.gg/mxthessdev)
 
 ## License
 
 MX-CarLock is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
-## Support
-
-- You don't like the script? Join my discord where I will be happy to help you solve the problem. ;) [Discord](https://dsc.gg/mxthessdev)
 
 ## Screenshots
 
