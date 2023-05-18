@@ -20,7 +20,7 @@ Before using MX-CarLock, make sure you have the following prerequisites:
 
 1. Clone the MX-CarLock repository to your Server:
 
-git clone https://github.com/Mxthesss/MX-CarLock.git
+- git clone https://github.com/Mxthesss/MX-CarLock.git
 
 2. Copy the `MX-CarLock` folder into your FiveM resource directory.
 
