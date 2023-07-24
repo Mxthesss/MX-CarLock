@@ -42,14 +42,8 @@ We go to es_extended --> client --> functions.lua
 We look for this function: function ESX.ShowNotification
 We rewrite the entire function to:
 
-`'function ESX.ShowNotification(Title, Message, Type, Position)
-     lib.notify({
-       title = Title,
-       description = Message,
-       type = Type,
-       position = "top"
-     })
-end'`
+![Snímek obrazovky 2023-07-24 212500](https://github.com/Mxthesss/MX-CarLock/assets/99074840/c7f7a83d-fc51-4565-8d76-5b26dac063ae)
+
 
 Then you go to fxmanifest.lua in es_extended where you add this line to the shared_scripts section:
 
