@@ -63,7 +63,7 @@ function ToggleVehicleLock()
 				PlayVehicleDoorCloseSound(vehicle, 1)
 				if lib.progressCircle({
 					duration = 500,
-					label = _U('locking'), -- Here you need to change text to your language
+					label = _U('locking'), 
 					position = 'bottom',
 					useWhileDead = false,
 					canCancel = true,
@@ -77,7 +77,7 @@ function ToggleVehicleLock()
 				}) then print('Do stuff when complete') else print('Do stuff when cancelled') end
 
 				lib.notify({
-					title = _U('car'), -- Here you need to change text to your language
+					title = _U('car'),
 					description = _U('message_locked'),
 					type = 'success'
 				})
@@ -86,7 +86,7 @@ function ToggleVehicleLock()
 				PlayVehicleDoorOpenSound(vehicle, 0)
 				if lib.progressCircle({
 					duration = 500,
-					label = _U('unlocking'), -- Here you need to change text to your language
+					label = _U('unlocking'), 
 					position = 'bottom',
 					useWhileDead = false,
 					canCancel = true,
@@ -99,7 +99,7 @@ function ToggleVehicleLock()
 					},
 				}) then print('Do stuff when complete') else print('Do stuff when cancelled') end
 				lib.notify({
-					title = _U('car'), -- Here you need to change text to your language
+					title = _U('car'), 
 					description = _U('message_unlocked'),
 					type = 'success'
 				})
@@ -125,7 +125,13 @@ Citizen.CreateThread(function()
 	end
 end)
 
-
+RegisterCommand('givekeys', function()
+    local closestP, closestD = ESX.Game.GetClosestPlayer()
+    local vehicle, dist = ESX.Game.GetClosestVehicle()
+    if DoesEntityExist(vehicle) and closestP ~= -1 and closestD < 4 and dist < 10 then
+        local plate = GetVehicleNumberPlateText(vehicle)
+        TriggerServerEvent('MX-CarLock:GiveKeyToPerson', plate, GetPlayerServerId(closestP))
+    end
+end)
 
 print('^5Made By Mxthess^7: ^1'..GetCurrentResourceName()..'^7 started ^2successfully^7...')
-

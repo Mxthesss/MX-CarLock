@@ -38,6 +38,22 @@ Before using MX-CarLock, make sure you have the following prerequisites:
 
 - Locale (now support EN/CZ language)
 
+We go to es_extended --> client --> functions.lua
+We look for this function: function ESX.ShowNotification
+We rewrite the entire function to:
+function ESX.ShowNotification(Title, Message, Type, Position)
+     lib.notify({
+       title = Title,
+       description = Message,
+       type = Type,
+       position = "top"
+     })
+end
+Then you go to fxmanifest.lua in es_extended where you add this line to the shared_scripts section:
+
+     '@ox_lib/init.lua',
+
+
 ## Usage
 
 Once MX-CarLock is installed and configured, you can use the following key bindings in your FiveM server:
@@ -50,16 +66,9 @@ Once MX-CarLock is installed and configured, you can use the following key bindi
 
 - Or join my discord server ;) [Discord](https://dsc.gg/mxthessdev)
 
-<br><h2>License</h2>
-<table><tr><td>
-MX-CarLock
+## License
 
-Copyright (C) 2023	Mxthess <https://github.com/Mxthesss>
-
-</td></tr>
-<tr><td>
 MX-CarLock is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-</td></td></table>
 
 ## Screenshots
 
