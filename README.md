@@ -1,7 +1,7 @@
 # MX-CarLock
 
 - [Docs]([https://fivem.net/](https://mxthess.gitbook.io/mx-scripts/))
-- 
+  
 MX-CarLock is a FiveM script designed to provide a convenient way to lock and unlock cars in your server. It supports the latest version of ESX and utilizes a config file for customization. Please note that this script has a dependency on the ox_lib library.
 
 ## Features
